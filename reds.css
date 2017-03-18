@@ -1,0 +1,100 @@
+.contenedor{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.iconos{
+  display: inline-block;
+  cursor:pointer;
+}
+.iconos img{
+  position: absolute;
+  margin: 11px 10px;
+  z-index: 99;
+  width: 27px;
+  height: auto;
+}
+.forma{
+  display: inline-block;
+  padding: 14px 3px;
+  position: relative;
+}
+#hexagon{
+  width: 40px;
+  height: 22px;
+  position: relative;
+  border-radius: 1px;
+}
+#hexagon:before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 21px solid transparent;
+  border-bottom: 13px solid;
+  border-radius: 3px;
+
+}
+#hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 13px solid;
+}
+.facebook #hexagon{
+  background-color: #2e3192;
+}
+.facebook #hexagon:after{
+  border-top-color: #2e3192;
+}
+.facebook #hexagon:before{
+  border-bottom-color: #2e3192;
+}
+.twitter #hexagon{
+  background-color: #55acee;
+}
+.twitter #hexagon:after{
+  border-top-color: #55acee;
+}
+.twitter #hexagon:before{
+  border-bottom-color: #55acee;
+}
+.google #hexagon{
+  background-color: #c33424;
+}
+.google #hexagon:after{
+  border-top-color: #c33424;
+}
+.google #hexagon:before{
+  border-bottom-color: #c33424;
+}
+.youtube #hexagon{
+  background-color: #db2824;
+}
+.youtube #hexagon:after{
+  border-top-color: #db2824;
+}
+.youtube #hexagon:before{
+  border-bottom-color: #db2824;
+}
+.youtube img{
+  width: 21px;
+  margin-left: 12.5px;
+}
+.instagram #hexagon{
+  background-color: #a07f5b;
+}
+.instagram #hexagon:after{
+  border-top-color: #a07f5b;
+}
+.instagram #hexagon:before{
+  border-bottom-color: #a07f5b;
+}

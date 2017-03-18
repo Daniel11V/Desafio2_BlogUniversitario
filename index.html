@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog Uniersitario</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+    <link rel="stylesheet" href="reds.css">
+    <style media="screen">
+      body{
+        margin: 0;
+        display: flex;
+        width: 100vw;
+      }
+      .izquierda{
+        height: 100vh;
+        width: 25%;
+        background-image: url(https://www.upo.es/diario/wp-content/uploads/2013/06/selectividad6.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+      }
+      .vacio{
+        height: 45%;
+      }
+      .logo1{
+        margin: 15px;
+      }
+      .contenido{
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.6);
+        max-width: 100%;
+        flex: 1;
+        padding: 9% 8% 5% 8%;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+      }
+      .logo2{
+        height: 70px;
+        width: 70px;
+        border-radius: 10px;
+        background-image: url(images/logo2.jpg);
+        background-size: cover;
+        margin: 0 auto;
+      }
+      .alineado{
+        text-align: center;
+      }
+      .p1{
+        color: #d1d2d5
+        font-weight: 400;
+        font-size: 17px;
+        margin-top:14px;
+        margin-bottom: 33px;
+      }
+      .p2{
+        color: white;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .inscribirse{
+        margin: 30px auto;
+        text-align: center;
+      }
+      .inscribirseP{
+        background-color:#e8481c;
+        border-radius: 4px;
+        border-bottom: 3px solid #a22f0f;
+        padding: 7px 9px;
+        text-decoration: none;
+        color: white;
+      }
+      /*.inscribirseP:active{
+        border-bottom: none;
+        transform: scaleY(10px);*/
+      }*/
+      .derecha{
+        flex:1;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="izquierda">
+      <div class="vacio">
+        <img src="images/logo1.png" class="logo1" alt="logo">
+      </div>
+      <div class="contenido">
+        <div class="logo2"></div>
+        <p class="alineado p1">Universidad Platzi</h2>
+        <p class="alineado p2">Todos los eventos, actividades y planes de estudio próximos</p>
+        <div class="inscribirse">
+          <a href="#" class="inscribirseP">Inscríbete hoy</a>
+        </div>
+        <div class="contenedor">
+          <a href="https://www.facebook.com/" target="_blank" class="iconos facebook">
+            <img src="images/facebook-icono.png" alt="icono">
+            <div class="forma">
+              <div id="hexagon"></div>
+            </div>
+          </a>
+          <a href="https://twitter.com/" target="_blank" class="iconos twitter">
+            <img src="images/twitter-icono.png" alt="icono">
+            <div class="forma">
+              <div id="hexagon"></div>
+            </div>
+          </a>
+          <a href="https://plus.google.com" target="_blank" class="iconos google">
+            <img src="images/gmas-icono.png" alt="icono">
+            <div class="forma">
+              <div id="hexagon"></div>
+            </div>
+          </a>
+          <a href="https://youtube.com/" target="_blank" class="iconos youtube">
+            <img src="images/youtube-icono.png" alt="icono">
+            <div class="forma">
+              <div id="hexagon"></div>
+            </div>
+          </a>
+          <a href="https://instagram.com/" target="_blank" class="iconos instagram">
+            <img src="images/insta-icono.png" alt="icono">
+            <div class="forma">
+              <div id="hexagon"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="derecha">
+    </section>
+  </body>
+</html>
