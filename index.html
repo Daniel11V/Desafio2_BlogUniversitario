@@ -32,7 +32,7 @@
         display: block;
         text-align: center;
       }
-      form .texto{
+      .texto{
         border: 2px solid #dfe0e7;
         border-radius: 5px;
         padding: 7px 9px;
@@ -72,7 +72,26 @@
         width:20px;
         height:20px;
         margin: 9px auto;
-        }
+      }
+      .buscar{
+        margin-left: 30px;
+      }
+      .buscar .texto{
+        width: 130px;
+        margin-top: 10px;
+        font-family: 'Roboto', sans-serif;
+      }
+      .icono_buscar{
+        background-image: url(images/search.png);
+        background-size: cover;
+        border: none;
+        background-color: white;
+        width: 18px;
+        height: 18px;
+        margin:auto 0;
+        margin-left: 5px;
+        cursor:pointer;
+      }
     </style>
   </head>
   <body>
@@ -135,22 +154,25 @@
         <nav>
           <ul>
             <li class="comunidad">
-              <img src="images/comunidad.png" alt="">
+              <img src="images/comunidad.png" alt="comunidad">
               <span>Comunidad</span>
             </li>
             <li class="conferencia">
-              <img src="images/conferencia.png" alt="">
+              <img src="images/conferencia.png" alt="conferencia">
               <span>Conferencia</span>
             </li>
             <li class="deportes">
-              <img src="images/deportes.png" alt="">
+              <img src="images/deportes.png" alt="deportes">
               <span>Deportes</span>
             </li>
             <li class="inauguraciones">
-              <img src="images/inauguraciones.png" alt="">
+              <img src="images/inauguraciones.png" alt="inauguraciones">
               <span>Inauguraciones</span>
             </li>
-            <li class=""></li>
+            <div class="buscar">
+              <input type="text" class="texto" placeholder="¿Qué evento buscas?">
+            </div>
+            <input type="submit" class="icono_buscar" value=""/>
           </ul>
         </nav>
       </div>
