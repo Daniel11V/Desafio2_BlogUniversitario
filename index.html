@@ -9,13 +9,23 @@
       body{
         margin: 0;
         display: flex;
-        width: 100vw;
         font-family: 'Roboto', sans-serif;
       }
       .derecha{
         flex:1;
-        padding: 20px 40px;
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
+      }
+      .scroll{
+        padding: 4vh 40px 0 40px;
+        overflow: hidden;
+        height:96vh;
+      }
+      .scroll:hover{
+        overflow-y: scroll;
+      }
+      ::-webkit-scrollbar {
+        width: 0;
       }
       .suscribirse{
         position: relative;
@@ -26,7 +36,7 @@
         justify-content: center;
         opacity: .8;
         font-size: 15px;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
       }
       form{
         display: block;
@@ -73,6 +83,9 @@
         height:20px;
         margin: 9px auto;
       }
+      .comunidad{
+        margin-left: 0;
+      }
       .buscar{
         margin-left: 30px;
       }
@@ -83,14 +96,46 @@
       }
       .icono_buscar{
         background-image: url(images/search.png);
-        background-size: cover;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
         border: none;
         background-color: white;
-        width: 18px;
-        height: 18px;
+        width: 30px;
+        height: 30px;
         margin:auto 0;
         margin-left: 5px;
+        padding:10px;
         cursor:pointer;
+      }
+      .post{
+        height: 200px;
+        width: 700px;
+        display: flex;
+        margin-bottom: 50px;
+      }
+      .post:hover{
+        background-color: rgb(241, 243, 250);
+      }
+      .post img{
+        height: 200px;
+        width: 200px;
+      }
+      .info{
+        flex: 1;
+        margin-left: 35px;
+      }
+      .tipo{
+        display: inline-block;
+        font-weight: 500;
+        font-size: 12px;
+        background-color: black;
+        color: white;
+        padding: 1px 7px;
+        border-radius: 5px;
+      }
+      .titulo{
+        font-size: 25px;
       }
     </style>
   </head>
@@ -141,40 +186,60 @@
       </div>
     </section>
     <section class="derecha">
-      <div class="suscribirse">
-        <div>
-          <p>Recibe <strong>lo mejor</strong> de nuestra agenda de eventos y promociones exclusivas:</p>
-          <form>
-            <input class="texto" type="email" required placeholder="Tu correo electrónico">
-            <input class="boton"type="submit" value="Suscribirme">
-          </form>
+      <div class="scroll">
+        <div class="suscribirse">
+          <div>
+            <p>Recibe <strong>lo mejor</strong> de nuestra agenda de eventos y promociones exclusivas:</p>
+            <form>
+              <input class="texto" type="email" required placeholder="Tu correo electrónico">
+              <input class="boton"type="submit" value="Suscribirme">
+            </form>
+          </div>
         </div>
-      </div>
-      <div class="navegador">
-        <nav>
-          <ul>
-            <li class="comunidad">
-              <img src="images/comunidad.png" alt="comunidad">
-              <span>Comunidad</span>
-            </li>
-            <li class="conferencia">
-              <img src="images/conferencia.png" alt="conferencia">
-              <span>Conferencia</span>
-            </li>
-            <li class="deportes">
-              <img src="images/deportes.png" alt="deportes">
-              <span>Deportes</span>
-            </li>
-            <li class="inauguraciones">
-              <img src="images/inauguraciones.png" alt="inauguraciones">
-              <span>Inauguraciones</span>
-            </li>
-            <div class="buscar">
-              <input type="text" class="texto" placeholder="¿Qué evento buscas?">
+        <div class="navegador">
+          <nav>
+            <ul>
+              <li class="comunidad">
+                <img src="images/comunidad.png" alt="comunidad">
+                <span>Comunidad</span>
+              </li>
+              <li class="conferencia">
+                <img src="images/conferencia.png" alt="conferencia">
+                <span>Conferencia</span>
+              </li>
+              <li class="deportes">
+                <img src="images/deportes.png" alt="deportes">
+                <span>Deportes</span>
+              </li>
+              <li class="inauguraciones">
+                <img src="images/inauguraciones.png" alt="inauguraciones">
+                <span>Inauguraciones</span>
+              </li>
+              <div class="buscar">
+                <input type="text" class="texto" placeholder="¿Qué evento buscas?">
+              </div>
+              <input type="submit" class="icono_buscar" value=""/>
+            </ul>
+          </nav>
+        </div>
+        <article class="post">
+          <img src="images/post1.jpg" alt="imagen de post">
+          <div class="info">
+            <div class="tipo">
+              Conferencias
             </div>
-            <input type="submit" class="icono_buscar" value=""/>
-          </ul>
-        </nav>
+            <p class="titulo">El futuro del trabajo ya está aquí</p>
+          </div>
+        </article>
+        <article class="post">
+          <img src="images/post2.jpg" alt="imagen de post">
+          <div class="info">
+            <div class="tipo">
+              Comunidad
+            </div>
+            <p class="titulo">Taller sobre deportes extremos</p>
+          </div>
+        </article>
       </div>
     </section>
   </body>
