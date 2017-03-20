@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Blog Uniersitario</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300" rel="stylesheet">
     <link rel="stylesheet" href="reds.css">
     <style media="screen">
       body{
@@ -121,6 +121,9 @@
         height: 200px;
         width: 200px;
       }
+      a{
+        text-decoration: none;
+      }
       .info{
         flex: 1;
         margin-left: 35px;
@@ -136,6 +139,8 @@
       }
       .titulo{
         font-size: 25px;
+        font-weight: 400;
+        color: black;
       }
     </style>
   </head>
@@ -222,15 +227,18 @@
             </ul>
           </nav>
         </div>
-        <article class="post">
-          <img src="images/post1.jpg" alt="imagen de post">
-          <div class="info">
-            <div class="tipo">
-              Conferencias
+          <a href="#">
+            <article class="post">
+            <img src="images/post1.jpg" alt="imagen de post">
+            <div class="info">
+              <div class="tipo">
+                Conferencias
+              </div>
+              <p class="titulo">El futuro del trabajo ya está aquí</p>
             </div>
-            <p class="titulo">El futuro del trabajo ya está aquí</p>
-          </div>
-        </article>
+          </article>
+          </a>
+          <a href="#">
         <article class="post">
           <img src="images/post2.jpg" alt="imagen de post">
           <div class="info">
@@ -240,6 +248,18 @@
             <p class="titulo">Taller sobre deportes extremos</p>
           </div>
         </article>
+        </a>
+        <a href="index2.html">
+          <article class="post">
+            <img src="images/post3.jpg" alt="imagen de post">
+            <div class="info">
+              <div class="tipo">
+                Comunidad
+              </div>
+              <p class="titulo">Nuevo taller "Viaja más y mejor"</p>
+            </div>
+          </article>
+        </a>
       </div>
     </section>
   </body>

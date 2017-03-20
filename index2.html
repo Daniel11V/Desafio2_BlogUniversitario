@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Post</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <style media="screen">
+      body{
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+      }
+      header p{
+        background: black;
+        margin:0;
+        color: white;
+        padding: 10px 10px;
+        font-size: 20px;
+      }
+      .background{
+        width:100%;
+        height: 55vh;
+        background-image: url(images/fondo.jpg);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /*border:1px solid blue;*/
+      }
+      .titulo{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 20px 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+      }
+      .cuerpo{
+        position: relative;
+      }
+      .suscribirse{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background-color: #eef1f9;
+        justify-content: center;
+        opacity: .8;
+        font-size: 15px;
+        margin-bottom: 25px;
+      }
+      form{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10px;
+      }
+      .texto{
+        border: 2px solid #dfe0e7;
+        border-radius: 5px;
+        padding: 7px 9px;
+        margin-right: 10px;
+        flex:1;
+      }
+      form .boton{
+        background-color: #c33424;
+        padding: 7px 9px;
+        border: 2px solid #b6635e;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+      }
+      .perfil{
+        position: absolute;
+        padding: 20px 25px 25px 25px;
+        width: 200px;
+        height: 250px;
+        /*border: 1px solid blue;*/
+      }
+      .yo{
+        width: 70px;
+        height: 70px;
+        background-image: url(images/yo.jpg);
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        /*border:2px solid #c33424;*/
+      }
+      .nombre{
+        font-weight: 500;
+        font-size: 25px;
+        margin:10px 0 5px 0;
+      }
+      .perfil a{
+        text-decoration: none;
+      }
+      .perfil img{
+        width:20px;
+        height: 20px;
+        /*padding-top: 5px;*/
+      }
+      .caracteristicas{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+      }
+      .iconos{
+        display: flex;
+        flex-direction: column;
+        width:30px;
+        height: 50px;
+      }
+      .imagen0{
+        margin-bottom:5px;
+        width:20px;
+        height: 20px;
+        background-size: cover;
+      }
+      .palabras{
+          display: flex;
+          flex-direction: column;
+      }
+      .palabras span{
+        margin-bottom: 7px;
+      }
+      .imagen1{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABZUlEQVRoQ+2Z203DQBBFTyqAEqACoAM6gA6gBKgESoAOoAOoAEqACqADokFrKQqJc2ZlYUWa+fLH3fV9zKws74I9r8We86cEzJ1gNoEj4A44BeJ5yvoA3oFbIJ5VZQQE4TfgUO3cD/oGzqyIjIAn4KKfV2rlM3BpVmQEfP2D+wPnaKHjqQX8mA0nxChzFaiRKgHJdJS5ClQJJK1vcGWuAlUClcB2B6qF+rpDrVLmKlANsTL8D0iZq0CVQCVQx+ivA/U5nRwFdcAoUJ1CSevrc3qLYTXEyU5S86lANcRJ62uIa4j7WmZ9lZpPBaoh7ktEmatAnQk8Avftl/w1cJXUobgpUELAJ/DQiMdNy2rFDU8IuQEOhBjFTYGEgNdGPMibGoScjIAVNwUaETC0SVzO9dR5S2VTeyluCrQmYKxNekTEmk3tpbgpUGP1kmyTXjFDe8VV7s7KCNi52RyAEjCH66vv3PsElutjQTFHbn4QAAAAAElFTkSuQmCC);
+      }
+      .imagen2{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABs0lEQVRoQ+1YbU0EMRB95wAJoABQADgBBYACkAAKCEoAB6AAJOCAy0va5Ngsy3TelKXJNLlf19m+r+m2u8HgYzM4fiSBtR1MB9IBUYGM0IyA+wAuAZwCOCr/vwJ4BnAP4EMU/Vt5tAN3BfwSRs65jiIRSYAqHxqBce6xce7itCgCFuWnQBinK5VEBAFm/t0J5EDtiQgCHvUrX9mFCAIt2Z8aJfdCBIEvZ3xqmYRBKi4IhiegROht52XnMjLCgeGbePhtlNZ7XJC3UC4cEaGa3ZZekLMfsoXNdJ3FiRDlexHgc9kTPOPwOF0Pd1Scx2kS/NfHaddWqBRF9oCCw12bBNzSBRVGObAH4GRyD2Yz88fBxq3NW+/HLwA+VR4qgfNyB66X91Y8JMOd6bG1UN1GCfxmR2Hv+rWO7tx6iLQ6wEg8lKiooOfq+a64aHlXtBBgTJ4AMO89B/viDADj9euwEvgr8BWwmYSFABXnV4feyk/VJgl+tVjcqSwEmEtukWsMrs04/TgsBNQ7r0p8EWMSUOU11KcDBpHWm2LpgfXQGVZOAgaRuk5JB7rKa3h4OmAQqeuULVHfQDE2+s1QAAAAAElFTkSuQmCC);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p>Universidad Platzi</p>
+      <div class="background">
+        <div class="titulo">
+          Llega el taller de "Viaja más y mejor"
+        </div>
+      </div>
+    </header>
+    <div class="cuerpo">
+      <div class="suscribirse">
+        <div>
+          <p>Recibe <strong>lo mejor</strong> de nuestra agenda de eventos y promociones exclusivas:</p>
+          <form>
+            <input class="texto" type="email" required placeholder="Tu correo electrónico">
+            <input class="boton"type="submit" value="Suscribirme">
+          </form>
+        </div>
+      </div>
+      <div class="perfil">
+        <div class="yo"></div>
+        <p class="nombre">Daniel Vinet</p>
+        <a href="daniel1vinet@Gmail.com">@danielvinet</a>
+        <div class="caracteristicas">
+          <div class="iconos">
+            <div class="imagen0 imagen1"></div>
+            <div class="imagen0 imagen2"></div>
+          </div>
+          <div class="palabras">
+            <span>Estudiante</span>
+            <span>Team Platzi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
