@@ -59,7 +59,6 @@
       }
       .texto{
         border: 2px solid #dfe0e7;
-        border-radius: 5px;
         padding: 7px 9px;
         margin-right: 10px;
         flex:1;
@@ -110,7 +109,7 @@
         display: flex;
         flex-direction: column;
         width:30px;
-        height: 50px;
+        height: 60px;
       }
       .imagen0{
         margin-bottom:5px;
@@ -130,6 +129,132 @@
       }
       .imagen2{
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABs0lEQVRoQ+1YbU0EMRB95wAJoABQADgBBYACkAAKCEoAB6AAJOCAy0va5Ngsy3TelKXJNLlf19m+r+m2u8HgYzM4fiSBtR1MB9IBUYGM0IyA+wAuAZwCOCr/vwJ4BnAP4EMU/Vt5tAN3BfwSRs65jiIRSYAqHxqBce6xce7itCgCFuWnQBinK5VEBAFm/t0J5EDtiQgCHvUrX9mFCAIt2Z8aJfdCBIEvZ3xqmYRBKi4IhiegROht52XnMjLCgeGbePhtlNZ7XJC3UC4cEaGa3ZZekLMfsoXNdJ3FiRDlexHgc9kTPOPwOF0Pd1Scx2kS/NfHaddWqBRF9oCCw12bBNzSBRVGObAH4GRyD2Yz88fBxq3NW+/HLwA+VR4qgfNyB66X91Y8JMOd6bG1UN1GCfxmR2Hv+rWO7tx6iLQ6wEg8lKiooOfq+a64aHlXtBBgTJ4AMO89B/viDADj9euwEvgr8BWwmYSFABXnV4feyk/VJgl+tVjcqSwEmEtukWsMrs04/TgsBNQ7r0p8EWMSUOU11KcDBpHWm2LpgfXQGVZOAgaRuk5JB7rKa3h4OmAQqeuULVHfQDE2+s1QAAAAAElFTkSuQmCC);
+      }
+      .centro{
+        width: 520px;
+        height: 100vh;
+        margin: 0 auto;
+        border:1px solid blue;
+      }
+      .incribirse{
+        display: inline-block;
+        padding: 14px 27px;
+        background-color: #902535;
+        border: 1px solid #d2a8b6;
+        border-bottom: 3px solid #d2a8b6;
+        color: white;
+        font-weight: 500;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .imagen3{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABUElEQVRoQ+2Z4XHCMAyFv0zQbgDdACaBUWASOko7CYxQJmg7QTndJUcuZ2zJTuOklX/lLrak955s66yGhY9m4fHjAGormKPAzyDoHBt9E0X2cpwXOQwoVmTPAUDxQfCrCqyBE7AB5HvK8QFcgCMg38ERSyEJ+Aw8Txl1wNcXsH0EIgbgDdhVDr5z/w7sQ7HEAHzOgP0uZkmhFyuA4eaqLUaQ7JgCDmBkyVyBkQk1m3MFcuomM829BaoSw3IKOQCjHK6AigEjq5bpKv++ByyUGue6AioGFKxqi8JhOqv8T7EHHECrcnEtlHsTuwKuQIwBP4XuDPgxOswG1UXyH1JIgTE4RUXgFDexA6h9D1RTQJ61n3K9j7zu+qg/8aef16XBIR2S2ip8tx2iYJcmVWEKiNfWwGrktEiZk7QRAg+5LaaUg1n8TykwiyBjQTiA2hLdAHKeWjHnHCwfAAAAAElFTkSuQmCC);
+        margin-bottom: 10px;
+      }
+      .imagen4{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADhklEQVRoQ+2ZjZFNQRCFz0ZABogAESACRIAIEAEiQASIYIkAESACRIAIqK9qZmu2b8+dnp9d9aq2q7ZevX13pvt0n+7pnnukA5ejA7dfFwD+dwRXRuCWpNuSbki6mj5LfF8l/ZDE5ydJn1eAnwWAoY8l3UtG99gEmPeSXidgPWtPnh0FcFnSS0kPh7RuF72V9FTS7979RgBgNMYDYqVgPCAAE5ZeAG8aXv+QaAE9MAi+I+QFgKEcdLu7YyEAHkURRAGg/Dglqd37p6TnvZ5LjmDdFcdYcgMQTUpFAXx0jP+TDH8V9VblOUA8kXTJ/E6lutPaOwLAow1ehwqZIi09rd+hGF630WjSqQWAhAVAKd9SNJrhbVltfoemeP26+T9Uqib2HgA2/G6qDZ7HW6uNzzajk6iWkUDXtZrOPQCgflB4A85z0kZp89d4shXt/DgOIhJlTryrVb/appQ7vF8KNbonYUcBoJPEfmb0EwXK8ympAcBQWoQsUAdQPTIDAD0YW1KJloNqFQKA90uDdxOpgmoWgC0gACIKTQDwnLpfSpS/5ZpZACT0L2PHTZuDnmGWf7QH1PxemQWAPs6Gsu14kfLjxBYPgF00Qh8UrABgabRxpgfgixlGOM4pa72yAoClMyUcGu1GwCre8C6IZAUAzgQcWrXZi8AKxR6FzoSK5wkAUCMgdh0aATBKIa8R7AUxRCESpewIR5MYY2dB2CSmEwbUuZTRrGQGxFAZXXWQlY6qgWhFd+ggW9VK2GprQVRb5LRwuJVgve0ER6qHd1xkEC3jvfxxO+JoO+12gsEDzT5GhCMnu+2Iu9ppb6DZNFKDACLLpgcalNiRktmUpIuOlBFDvWcok7Tz5c1f90jJxmwAdcrZlO8cbGc51NP7lMMUszjfXZ2tQcUrf0SASKwGgcPw/KmDStL9NBe4EW0B8KiUqxQbr6ITRnN1aefuZrWKAMBgqgYvMEohAgz/JPeMcPvAsG5vu0OTYBQAm3MqWhA5GlQNFEZpxX6MiqzzbjvYC/o294sCyB62lcl6HpD8kewkX3m9TjHI1+t7M3aTNqXSXgD5hIQ69jZ5hkasBTBexwFhGQGQSywgyqvHsFLnQbxOHjQpY9eOAsj7QAkUQwnvRcUeKHobvI0jNleGUW/MAij1UAoBkl+z2mtyhpH8mhXDl5TglQCiTlv63AWApe4c2OzgI/APiDrHMYa0awoAAAAASUVORK5CYII=);
+        margin-bottom: 10px;
+      }
+      .palabras2 p{
+        margin:0;
+        margin-bottom: 12px;
+      }
+      .redess{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        height:25px;
+        margin: 40px 0;
+      }
+      .significado{
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 70px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: inline-block;
+      }
+      .facebook{
+        height: 100%;
+        width:105px;
+        display: flex;
+        flex-direction: row;
+      }
+      .face{
+        background-image: url(images/facebookL.png);
+      }
+      .unidad{
+        width: 17px;
+        text-align: center;
+        padding:5px;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        display: inline-block;
+      }
+      .flechita1{
+        width:0px;
+        height:0px;
+        border-top: 4px solid transparent;  /* izquierda flecha */
+        border-bottom: 4px solid transparent; /* derecha flecha */
+        border-right: 5px solid #ccc; /* base flecha y color*/
+        top: 11px;
+        position: relative;
+      }
+      .flechita2{
+        width:0px;
+        height:0px;
+        border-top: 4px solid transparent;  /* izquierda flecha */
+        border-bottom: 4px solid transparent; /* derecha flecha */
+        border-right: 5px solid white; /* base flecha y color*/
+        top: 3px;
+        left:1px;
+        position: relative;
+      }
+      .cajita{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 13px;
+      }
+      .tweet{
+        background-image: url(images/tweet.png);
+      }
+      .i{
+        background-color: #006599;
+      }
+      .in{
+        background-image: url(images/in.jpg);
+        background-position: left;
+        border-radius: 6px;
+        width: 35%;
+        height: 100%;
+        background-size: cover;
+        margin:0;
+        display: inline-block;
+      }
+      .share{
+        color:white;
+        position: relative;
+        bottom:6px;
+        right: 2px;
+      }
+      .g{
+        height: 100%;
+        width:70px;
+        display: flex;
+        flex-direction: row;
+      }
+      .g img{
+        width: 100%;
+        height: 100%;
+      }
+      .g2{
+        width: 26px;
+        padding: 0 4px;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -164,6 +289,48 @@
           <div class="palabras">
             <span>Estudiante</span>
             <span>Team Platzi</span>
+          </div>
+        </div>
+      </div>
+      <div class="centro">
+        <a href="" class="incribirse">Inscríbete aqui</a>
+        <div class="caracteristicas">
+          <div class="iconos">
+            <div class="imagen0 imagen3"></div>
+            <div class="imagen0 imagen4"></div>
+          </div>
+          <div class="palabras2">
+            <p>Martes -09 de Septiembre de 2017</p>
+            <p>12pm(Hora Ciudad de Argentina)</p>
+          </div>
+        </div>
+        <div class="redess">
+          <div class="facebook">
+            <div class="significado face">
+            </div>
+            <div class="cajita"><!-- flechita para likes (Edicion de divs)-->
+              <div class="">
+                <div class="flechita1"></div><div class="flechita2"></div>
+              </div>
+              <div class="unidad">2</div>
+            </div>
+          </div>
+          <div class="significado tweet">
+          </div>
+          <div class="significado i">
+              <div class="in"></div>
+                <span class="share">Share</span>
+          </div>
+          <div class="g">
+            <div class="unidad g2">
+              <img src="images/g+.png" alt="">
+            </div>
+            <div class="cajita"><!-- flechita para likes (Edicion de divs)-->
+              <div class="">
+                <div class="flechita1"></div><div class="flechita2"></div>
+              </div>
+              <div class="unidad">2</div>
+            </div>
           </div>
         </div>
       </div>
