@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Post</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300" rel="stylesheet">
     <style media="screen">
       body{
         margin:0;
@@ -92,7 +92,7 @@
         font-size: 25px;
         margin:10px 0 5px 0;
       }
-      .perfil a{
+      a{
         text-decoration: none;
       }
       .perfil img{
@@ -100,41 +100,11 @@
         height: 20px;
         /*padding-top: 5px;*/
       }
-      .caracteristicas{
-        display: flex;
-        flex-direction: row;
-        margin-top: 20px;
-      }
-      .iconos{
-        display: flex;
-        flex-direction: column;
-        width:30px;
-        height: 60px;
-      }
-      .imagen0{
-        margin-bottom:5px;
-        width:20px;
-        height: 20px;
-        background-size: cover;
-      }
-      .palabras{
-          display: flex;
-          flex-direction: column;
-      }
-      .palabras span{
-        margin-bottom: 7px;
-      }
-      .imagen1{
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABZUlEQVRoQ+2Z203DQBBFTyqAEqACoAM6gA6gBKgESoAOoAOoAEqACqADokFrKQqJc2ZlYUWa+fLH3fV9zKws74I9r8We86cEzJ1gNoEj4A44BeJ5yvoA3oFbIJ5VZQQE4TfgUO3cD/oGzqyIjIAn4KKfV2rlM3BpVmQEfP2D+wPnaKHjqQX8mA0nxChzFaiRKgHJdJS5ClQJJK1vcGWuAlUClcB2B6qF+rpDrVLmKlANsTL8D0iZq0CVQCVQx+ivA/U5nRwFdcAoUJ1CSevrc3qLYTXEyU5S86lANcRJ62uIa4j7WmZ9lZpPBaoh7ktEmatAnQk8Avftl/w1cJXUobgpUELAJ/DQiMdNy2rFDU8IuQEOhBjFTYGEgNdGPMibGoScjIAVNwUaETC0SVzO9dR5S2VTeyluCrQmYKxNekTEmk3tpbgpUGP1kmyTXjFDe8VV7s7KCNi52RyAEjCH66vv3PsElutjQTFHbn4QAAAAAElFTkSuQmCC);
-      }
-      .imagen2{
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABs0lEQVRoQ+1YbU0EMRB95wAJoABQADgBBYACkAAKCEoAB6AAJOCAy0va5Ngsy3TelKXJNLlf19m+r+m2u8HgYzM4fiSBtR1MB9IBUYGM0IyA+wAuAZwCOCr/vwJ4BnAP4EMU/Vt5tAN3BfwSRs65jiIRSYAqHxqBce6xce7itCgCFuWnQBinK5VEBAFm/t0J5EDtiQgCHvUrX9mFCAIt2Z8aJfdCBIEvZ3xqmYRBKi4IhiegROht52XnMjLCgeGbePhtlNZ7XJC3UC4cEaGa3ZZekLMfsoXNdJ3FiRDlexHgc9kTPOPwOF0Pd1Scx2kS/NfHaddWqBRF9oCCw12bBNzSBRVGObAH4GRyD2Yz88fBxq3NW+/HLwA+VR4qgfNyB66X91Y8JMOd6bG1UN1GCfxmR2Hv+rWO7tx6iLQ6wEg8lKiooOfq+a64aHlXtBBgTJ4AMO89B/viDADj9euwEvgr8BWwmYSFABXnV4feyk/VJgl+tVjcqSwEmEtukWsMrs04/TgsBNQ7r0p8EWMSUOU11KcDBpHWm2LpgfXQGVZOAgaRuk5JB7rKa3h4OmAQqeuULVHfQDE2+s1QAAAAAElFTkSuQmCC);
-      }
       .centro{
+        margin: 0 0 0 412.5px;
+      }
+      .centroE{
         width: 520px;
-        height: 100vh;
-        margin: 0 auto;
-        border:1px solid blue;
       }
       .incribirse{
         display: inline-block;
@@ -149,6 +119,37 @@
         font-size: 14px;
         cursor: pointer;
       }
+      .caracteristicas{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+      }
+      .iconos{
+        display: flex;
+        flex-direction: column;
+        width:35px;
+        height: 60px;
+      }
+      .imagen0{
+        margin-bottom:5px;
+        width:20px;
+        height: 20px;
+        background-size: cover;
+      }
+      .palabras{
+        display: flex;
+        flex-direction: column;
+      }
+      .palabras span{
+        margin-bottom: 7px;
+        font-weight: lighter;
+      }
+      .imagen1{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABZUlEQVRoQ+2Z203DQBBFTyqAEqACoAM6gA6gBKgESoAOoAOoAEqACqADokFrKQqJc2ZlYUWa+fLH3fV9zKws74I9r8We86cEzJ1gNoEj4A44BeJ5yvoA3oFbIJ5VZQQE4TfgUO3cD/oGzqyIjIAn4KKfV2rlM3BpVmQEfP2D+wPnaKHjqQX8mA0nxChzFaiRKgHJdJS5ClQJJK1vcGWuAlUClcB2B6qF+rpDrVLmKlANsTL8D0iZq0CVQCVQx+ivA/U5nRwFdcAoUJ1CSevrc3qLYTXEyU5S86lANcRJ62uIa4j7WmZ9lZpPBaoh7ktEmatAnQk8Avftl/w1cJXUobgpUELAJ/DQiMdNy2rFDU8IuQEOhBjFTYGEgNdGPMibGoScjIAVNwUaETC0SVzO9dR5S2VTeyluCrQmYKxNekTEmk3tpbgpUGP1kmyTXjFDe8VV7s7KCNi52RyAEjCH66vv3PsElutjQTFHbn4QAAAAAElFTkSuQmCC);
+      }
+      .imagen2{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABs0lEQVRoQ+1YbU0EMRB95wAJoABQADgBBYACkAAKCEoAB6AAJOCAy0va5Ngsy3TelKXJNLlf19m+r+m2u8HgYzM4fiSBtR1MB9IBUYGM0IyA+wAuAZwCOCr/vwJ4BnAP4EMU/Vt5tAN3BfwSRs65jiIRSYAqHxqBce6xce7itCgCFuWnQBinK5VEBAFm/t0J5EDtiQgCHvUrX9mFCAIt2Z8aJfdCBIEvZ3xqmYRBKi4IhiegROht52XnMjLCgeGbePhtlNZ7XJC3UC4cEaGa3ZZekLMfsoXNdJ3FiRDlexHgc9kTPOPwOF0Pd1Scx2kS/NfHaddWqBRF9oCCw12bBNzSBRVGObAH4GRyD2Yz88fBxq3NW+/HLwA+VR4qgfNyB66X91Y8JMOd6bG1UN1GCfxmR2Hv+rWO7tx6iLQ6wEg8lKiooOfq+a64aHlXtBBgTJ4AMO89B/viDADj9euwEvgr8BWwmYSFABXnV4feyk/VJgl+tVjcqSwEmEtukWsMrs04/TgsBNQ7r0p8EWMSUOU11KcDBpHWm2LpgfXQGVZOAgaRuk5JB7rKa3h4OmAQqeuULVHfQDE2+s1QAAAAAElFTkSuQmCC);
+      }
       .imagen3{
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABUElEQVRoQ+2Z4XHCMAyFv0zQbgDdACaBUWASOko7CYxQJmg7QTndJUcuZ2zJTuOklX/lLrak955s66yGhY9m4fHjAGormKPAzyDoHBt9E0X2cpwXOQwoVmTPAUDxQfCrCqyBE7AB5HvK8QFcgCMg38ERSyEJ+Aw8Txl1wNcXsH0EIgbgDdhVDr5z/w7sQ7HEAHzOgP0uZkmhFyuA4eaqLUaQ7JgCDmBkyVyBkQk1m3MFcuomM829BaoSw3IKOQCjHK6AigEjq5bpKv++ByyUGue6AioGFKxqi8JhOqv8T7EHHECrcnEtlHsTuwKuQIwBP4XuDPgxOswG1UXyH1JIgTE4RUXgFDexA6h9D1RTQJ61n3K9j7zu+qg/8aef16XBIR2S2ip8tx2iYJcmVWEKiNfWwGrktEiZk7QRAg+5LaaUg1n8TykwiyBjQTiA2hLdAHKeWjHnHCwfAAAAAElFTkSuQmCC);
         margin-bottom: 10px;
@@ -160,6 +161,7 @@
       .palabras2 p{
         margin:0;
         margin-bottom: 12px;
+        font-weight: lighter;
       }
       .redess{
         width:100%;
@@ -256,6 +258,48 @@
         padding: 0 4px;
         cursor: pointer;
       }
+      .centroT{
+        width: 820px;
+        margin-bottom: 100px;
+      }
+      .centroT p{
+        font-size: 17px;
+        margin: 30px 0;
+        line-height: 43px;
+      }
+      .centroT span{
+        font-weight: 500;
+      }
+      .centroT img{
+        width:800px;
+        height:600px;
+        margin-bottom: 40px;
+      }
+      #subtitulo{
+        font-weight: 500;
+        margin: 65px 0 30px 0;
+      }
+      #subtitulo2{
+        font-weight: 500;
+        margin: 65px 0 30px 0;
+      }
+      #subtitulo3{
+        font-weight: 500;
+        margin: 75px 0 30px 0;
+      }
+      .frase{
+        font-size: 17px;
+        border-left: 4px solid rgba(0, 0, 0, 0.2);
+        margin: 30px 0 75px 0;
+        /*text-transform: full-width;*/
+      }
+      .frase p{
+        margin-bottom: 40px;
+        padding: 0 0 30px 15px;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: cursive, 'Roboto';
+      }
     </style>
   </head>
   <body>
@@ -293,45 +337,101 @@
         </div>
       </div>
       <div class="centro">
-        <a href="" class="incribirse">Inscríbete aqui</a>
-        <div class="caracteristicas">
-          <div class="iconos">
-            <div class="imagen0 imagen3"></div>
-            <div class="imagen0 imagen4"></div>
+        <div class="centroE">
+          <a href="" class="incribirse">Inscríbete aqui</a>
+          <div class="caracteristicas">
+            <div class="iconos">
+              <div class="imagen0 imagen3"></div>
+              <div class="imagen0 imagen4"></div>
+            </div>
+            <div class="palabras2">
+              <p>Martes -09 de Septiembre de 2017</p>
+              <p>12pm(Hora Ciudad de Argentina)</p>
+            </div>
           </div>
-          <div class="palabras2">
-            <p>Martes -09 de Septiembre de 2017</p>
-            <p>12pm(Hora Ciudad de Argentina)</p>
+          <div class="redess">
+            <div class="facebook">
+              <div class="significado face">
+              </div>
+              <div class="cajita"><!-- flechita para likes (Edicion de divs)-->
+                <div class="">
+                  <div class="flechita1"></div><div class="flechita2"></div>
+                </div>
+                <div class="unidad">2</div>
+              </div>
+            </div>
+            <div class="significado tweet">
+            </div>
+            <div class="significado i">
+              <div class="in"></div>
+              <span class="share">Share</span>
+            </div>
+            <div class="g">
+              <div class="unidad g2">
+                <img src="images/g+.png" alt="">
+              </div>
+              <div class="cajita"><!-- flechita para likes (Edicion de divs)-->
+                <div class="">
+                  <div class="flechita1"></div><div class="flechita2"></div>
+                </div>
+                <div class="unidad">2</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="redess">
-          <div class="facebook">
-            <div class="significado face">
-            </div>
-            <div class="cajita"><!-- flechita para likes (Edicion de divs)-->
-              <div class="">
-                <div class="flechita1"></div><div class="flechita2"></div>
-              </div>
-              <div class="unidad">2</div>
-            </div>
+        <div class="centroT">
+          <p>¿De qué trata el taller?</p>
+          <p>Muchos pensarían que esto es una manera ineficiente de crear una empresa o trabajar.</p>
+          <p>Para nosotros, esto es el futuro del trabajo. <span>Es remote.</span></p>
+          <p>Muchas de las grandes compañías exitosas como Virgen, 37Sigma, y IBM han abarcado esta filosofía de trabajo que proporciona a la gente la libertad para trabajar donde quieran, cuando quieran y como quieran.</p>
+          <p id="subtitulo">¿Por qué adoptar esta filosofía de trabajo?</p>
+          <p>Por una simple razón: <span>trabajar mejor.</span></p>
+          <p>Okay, no estoy sugiriendo que todo esto es un paseo por el parque. Hay también inconvenientes al trabajar de manera remote.</p>
+          <p>En cualquier caso, aquí están algunos <span>insights</span> en la filosofía remoto.</p>
+          <p>Trabajando remote significa cero traslado a la oficina y horarios flexibles que se adaptan a tu estilo de vida, lo cual se traduce a más trabajo productivo, !algo que todos necesitamos!</p>
+          <p>Muchos critican este método porque encuentran difícil de medir y rastrear las horas de trabajo. Pero lo que se les olvida es que yendo a la oficina de 9 a 5 no necesariamente implica producir trabajo de valor.</p>
+          <img src="images/lentes.jpg" alt="lentes">
+          <p><span>Te pregunto,¿a dónde vas cuando quieres generar trabajo significativo?</span></p>
+          <p>No estoy hablando de tus responsabilidades generales, sino el trabajo que requiere <span>creatividad e inspiración.</span></p>
+          <p>Seguro tus lugares para encontrar inspiración son el café, tu casa, o ante mucho en la oficina -pero- ya sea súper temprano o al final del día.</p>
+          <p>Esto se debe a que en las oficinas tenemos constantes distracciones. Y claro somos multitaskers podemos repartirnos entre varias tareas.</p>
+          <p>Pero el problema surge cuando estas <span>distracciones</span> afectan nuestro trabajo creativo.</p>
+          <p>El trabajo creativo es como el sueño, si tienes varias distracciones que te despiertan en la noche la probabilidad de obtener una buena noche de sueño son pocas o nulas.</p>
+          <img src="images/rocas.jpg" alt="rocas">
+          <p><span>Cultura Organizacional del trabajo Remote</span></p>
+          <p>Acá es cuando uno tiene que depender de la cultura organizacional si es que quiere adoptar una filosofía remote.</p>
+          <p>Te pregunto: ¿En tu organización tienes una cultura centrada en la confianza y compromiso?</p>
+          <p>Si tu respuesta es sí, ¡excelente!</p>
+          <p>Este es el paso esencial para desarrollar una organización que adopte el trabajo remote.</p>
+          <p>Uno como <span>líder</span> tiene que promover entre los miembros de la organización la autonomía sin embargo también el hábito de la responsabilidad.</p>
+          <p>A tus colegas se les tiene que aclarar cuáles son sus responsabilidades, objetivos y plazos, y cómo el incumplimiento de una fecha límite afecta al equipo y a la compañía.</p>
+          <p id="subtitulo2">Haciendo que el trabajo remote trabaje</p>
+          <p>La tecnología nos permite trabajar remote, y algunas herramientas como fundamento de la infraestructura de la organización para tener un trabajo remoto eficiente son Slack, y Google Hangouts.</p>
+          <p><span>Slack</span>- Nuestra herramienta de productividad a elección.</p>
+          <p>Básicamente se trata de una interfaz de chat privado para tu equipo que trabaja en los dispositivos móviles y computadoras. Las alertas móviles te mantienen conectado y al pendiente de los asuntos.</p>
+          <p><span>Google+ Hangouts</span> ¿Nesecitas un espacio para interactuar en tiempo real?</p>
+          <p>Google+ Hangouts o Skipe son herramientas esenciales para la comunicación en término remote. Aquí podemos charlar cara a cara, compartir nuestras pantallas, colaborar en tiempo real, etc.</p>
+          <p id="subtitulo3">Nota Final</p>
+          <p>Al inicio nos cuesta extender nuestra visión para ver más allá, observar, y poder identificar oportunidades.</p>
+          <p>Una breve historia:</p>
+          <p>En 1980 <span>Borders</span> generaba millónes de utilidades. Todo un éxito.</p>
+          <p>En 1995, Flash Forward en un mundo en el que existía el internet, de repente hay una nueva manera de abrir una librería. Amazon.</p>
+          <p>Durante los próximos 15 años la idea, que parecía una locura para muchos en 1995, llegó a ser obvio.</p>
+          <p>Amazon paso por el <span>"Tipping point".</span></p>
+          <p>¿Qué es? Es un punto donde una idea se potencia al máximo creando un cambio significativo.</p>
+          <p>Mediante el aprovechamiento de sus ventajas competitivas, y pasando los ahorros a los clientes de una manera que nadie con una cadena de grandes tiendas minoristas podrían, Amazon termino destruyendo a Borders.</p>
+          <p>En mi opinión, durante los próximos años las startups utilizarán cada vex más el trabajo remote como una ventaja competitiva hasta que la idea llegue a la aceptación general.</p>
+          <p>¡Hay demasiados beneficios que no se pueden ignorar!</p>
+          <p>Entonces te pregunto:</p>
+          <p><span>¿Piensas en seguir en tu zona de confort y esperar que esto se convierta en una norma?</span></p>
+          <p>o</p>
+          <p><span>¿Seras el atrevido que decida pasar por el "tipping point" con una ventaja competitiva?</span></p>
+          <div class="frase">
+            <p>El futuro del trabajo ya está aquí. Todo depende de si tomarás ventaja de ella.</p>
           </div>
-          <div class="significado tweet">
-          </div>
-          <div class="significado i">
-              <div class="in"></div>
-                <span class="share">Share</span>
-          </div>
-          <div class="g">
-            <div class="unidad g2">
-              <img src="images/g+.png" alt="">
-            </div>
-            <div class="cajita"><!-- flechita para likes (Edicion de divs)-->
-              <div class="">
-                <div class="flechita1"></div><div class="flechita2"></div>
-              </div>
-              <div class="unidad">2</div>
-            </div>
-          </div>
+          <p>Como siempre un gran abrazo.</p>
+          <p><span>¿Te gusto el artículo?</span></p>
+          <p>También puedes encontrar otros artículos en mi <a href="index.html" style="color: blue;">blog</a>.</p>
         </div>
       </div>
     </div>
